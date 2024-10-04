@@ -1,0 +1,49 @@
+html body {
+    margin: 0%;
+}
+
+.grid_container {
+    display:grid;
+    height: 100vh;
+    grid-template-columns:200px 1fr;
+    grid-template-rows: 450px 230px 170px ;
+    grid-template-areas: "menu1 titre"
+    "images titre"
+    "footer footer";
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.menu {
+    grid-area: menu1;
+    height: 200px;
+    background-color: aliceblue;
+}
+
+.titre {
+    grid-area: titre;
+    background-color: blueviolet;
+}
+
+.lien {
+    display: flex;
+    flex-direction: column;
+}
+
+.titre h1 {
+    text-align: center;
+}
+
+img {
+    grid-area: img;
+    display: flex;
+    align-self: flex-end;
+    text-align: center;
+    height: 100px;
+}
+
+p {
+    text-align: justify;
+}
